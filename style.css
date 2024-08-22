@@ -59,6 +59,79 @@
     display: none;
 }
 
+.resp_Navbar {
+    display: none;
+    text-align: center;
+}
+
+
+.resp_Navbar ul {
+    list-style-type: none;
+    padding: 1rem 0;
+    
+}
+
+.resp_Navbar ul li{
+    margin-bottom: 0.5rem;
+}
+
+.resp_Navbar ul li a{
+    font-size: 1.1rem;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resp_Navbar ul li a:hover{
+    color: #4CAF4F;
+}
+
+.resp_Navbar ul li button{
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #4CAF4F;
+    color: white;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+@media (max-width : 852px) {
+    .responsive {
+        display: block;
+        text-align: center;
+    }
+    .responsive ul {
+        list-style-type: none;
+        padding: 1rem 0;
+        
+    }
+    
+    .responsive ul li{
+        margin-bottom: 0.5rem;
+    }
+    
+    .responsive ul li a{
+        font-size: 1.1rem;
+        color: gray;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .responsive ul li a:hover{
+        color: #4CAF4F;
+    }
+    
+    .responsive ul li button{
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #4CAF4F;
+        color: white;
+        border-radius: 0.2rem;
+        cursor: pointer;
+    }
+    
+}
+
 @media (max-width : 1162px) {
     .navbar {
         height: 5rem;
@@ -127,8 +200,6 @@
         font-weight: bold;
     }
 }
-
-@media (max-width : 486px) {}
 
 /* Navbar ends */
 
@@ -204,6 +275,15 @@
     }
     .hero .image img {
         height: 50%;
+    }
+}
+
+@media (max-width: 470px) {
+    .hero .content .content_parent .con1 {
+        font-size: 1.1rem;
+    }
+    .hero .image img {
+        height: 30%;
     }
 }
 
@@ -645,6 +725,14 @@ input::placeholder {
     }
     .footer .footer_child .misc .Email {
         width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .footer .footer_child .misc .Email i {
+        position: absolute;
+        margin-top: 0.6rem;
+        right: 25%;
+        cursor: pointer;
     }
     .footer .footer_child .misc .Company p, .footer .footer_child .misc .Support p {
         text-align: center;
